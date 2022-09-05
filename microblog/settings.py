@@ -31,7 +31,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['tempmicroblog.herokuapp.com', 'localhost']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -43,7 +42,9 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'django_summernote',
     'accounts',
+    'blog',
 ]
 
 MIDDLEWARE = [

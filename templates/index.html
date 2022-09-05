@@ -1,0 +1,29 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-12 mt-3 left">
+            <div class="row">
+
+                {% for post in post_list %}
+                    <div class="row">
+                        <hr>
+                        <p><strong>{{ post.title }}</strong>: {{ post.content }}</p>
+                        <hr>
+                        <span>Posted by: username on {{ post.created_on }}</span>
+                        <hr>
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{%endblock%}
