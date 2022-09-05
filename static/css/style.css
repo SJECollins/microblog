@@ -32,6 +32,7 @@ h1 {
     letter-spacing: 4px;
     margin-top: 1rem;
     color: var(--site-dark);
+    text-shadow: 4px 8px 16px var(--site-orange);
 }
 
 /* Blog */
@@ -44,26 +45,28 @@ h1 {
 
 .card-deck {
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
+    align-items: center;
 }
 
 .blog-card {
     background-color: var(--site-dark);
     color: var(--site-white);
     letter-spacing: 2px;
-    min-height: 200px;
+    min-height: auto;
     max-width: 400px;
     padding: 1em 2em;
     margin: 2em;
     border-radius: 10px;
-    box-shadow: 4px 8px 8px #06113C;
+    box-shadow: 4px 8px 16px #06113C;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-self: auto;
 }
 
 .blog-title {
