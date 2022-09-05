@@ -1,8 +1,7 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic
 from .models import Post
 from .forms import PostForm
-from django.contrib.auth import get_user
 
 # Create your views here.
 
@@ -26,3 +25,9 @@ def add(request):
         'form': form,
     }
     return render(request, 'add.html', context)
+
+
+def delete(request, post_id):
+    post = get_object_or_404(Post, id=post_id)
+    post.delete()
+    return redirect('/')

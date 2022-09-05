@@ -36,19 +36,52 @@ h1 {
 
 /* Blog */
 
+.card-container {
+    width: 80vw;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.card-deck {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.blog-card {
+    background-color: var(--site-dark);
+    color: var(--site-white);
+    letter-spacing: 2px;
+    min-height: 200px;
+    max-width: 400px;
+    padding: 1em 2em;
+    margin: 2em;
+    border-radius: 10px;
+    box-shadow: 4px 8px 8px #06113C;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .blog-title {
     font-family: "Josefin Sans", sans-serif;
     color: var(--site-grey);
     font-size: 1.25rem;
-    letter-spacing: 2px;
 }
 
 .card-entry {
     font-family: "Permanent Marker", sans-serif;
-    background-color: var(--site-dark);
-    color: var(--site-white);
-    width: 500px;
-    padding: 1em 2em;
+}
+
+.form-text {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.small-text {
+    font-size: 0.75rem;
 }
 
 /* buttons */

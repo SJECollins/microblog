@@ -3,27 +3,31 @@
 
 {% block content %}
 
-<div class="container-fluid">
-    <div class="row">
+<div class="card-container">
 
-        <!-- Blog Entries Column -->
-        <div class="col-12 mt-3 left">
-            <div class="row">
+    <!-- Blog Entries Column -->
+    <div class="col-12 mt-3 left">
+        <div class="card-deck">
 
-                {% for post in post_list %}
-                    <div class="row">
+            {% for post in post_list %}
+                <div class="blog-card">
+                    <div>
                         <hr>
-                        <p><strong>{{ post.title }}</strong>: {{ post.content }}</p>
-                        <hr>
-                        <span>Posted by: {{ post.author }} on {{ post.created_on }}</span>
-                        <hr>
+                        <p class="card-entry"><span class="blog-title">{{ post.title }}</span>: {{ post.content }}</p>
                     </div>
-                {% endfor %}
+                    <div>
+                        <hr>
+                        <span class="small-text">Posted by: {{ post.author }} on {{ post.created_on }}</span>
+                        <hr>
+                        {% if user.is_authenticated and user == post.author %}
+                            <a class="blog-links" href="/delete/{{ task.id }}">Delete</a>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
 
-            </div>
         </div>
     </div>
-
 </div>
 
 {%endblock%}
