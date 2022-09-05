@@ -20,7 +20,7 @@
                         <span class="small-text">Posted by: {{ post.author }} on {{ post.created_on }}</span>
                         <hr>
                         {% if user.is_authenticated and user == post.author %}
-                            <a class="blog-links" href="/delete/{{ task.id }}">Delete</a>
+                            <a class="blog-links" href="/delete/{{ post.id }}">Delete</a>
                         {% endif %}
                     </div>
                 </div>
