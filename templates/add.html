@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 mt-3 offset-md-2">
+
+
+      <h1>Post</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8 mt-3 offset-md-2">
+
+      <form method="POST" action="add">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <button class="blog-links" type="submit">Post</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

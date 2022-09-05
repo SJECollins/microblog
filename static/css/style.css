@@ -1,142 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&family=Permanent+Marker&display=swap");
+
+:root {
+    --site-dark: #06113C;
+    --site-orange: #FF8C32;
+    --site-grey: #DDDDDD;
+    --site-white: #EEEEEE;
+}
+
 body {
-    background-color: #F9FAFC;
+    background-color: var(--site-grey);
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
 }
 
-.brand {
-    font-family: Lato, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #4A4A4F;
+/* Navbar and Footer */
+
+.nav-theme {
+    background-color: var(--site-dark);
+    color: var(--site-white)
 }
 
-.red-o {
-    color: #E84610;
-}
-
-.thin {
-    font-weight: 300;
-}
-
-.light-bg {
-    background-color: #fff;
-}
-
-.dark-bg {
-    background-color: #445261;
-}
-
-.main-bg {
-    background-color: #F9FAFC;
-}
-
-.card {
-    border: none;
-    background-color: transparent;
-}
-
-.image-container {
-    position: relative;
-}
-
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #23BBBB;
-}
-
-.author {
-    color: white;
-    margin: 4px;
-    text-transform: uppercase;
-}
-
-.masthead {
-    margin-top: 10px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 33vh;
-    width: 100%;
-}
-
-.masthead-text {
-    background-color: #445261;
-    color: white;
-    position: relative;
-}
-
-.masthead-image {
-    position: relative;
-    overflow: hidden;
-}
-
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
-}
-
-.post-link {
-    text-decoration: none;
-    color: #445261;
-}
-
-.post-link:hover,
-.page-link {
-    color: #E84610;
-}
-
-.post-title {
-    margin-top: 20%;
-    margin-left: 5%;
-}
-
-.post-subtitle {
-    margin-left: 5%;
-    color: lightgray;
-}
-
-.btn-signup {
-    background-color: #23BBBB;
-    color: #fff;
-}
-
-.btn-signup:hover,
-.btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
-}
-
-.link {
-    color: #23BBBB;
+a {
     text-decoration: none;
 }
 
-.link:hover,
-.link:active {
-    color: #445261;
-    text-decoration: underline;
+/* Headings */
+
+h1 {
+    font-size: 5rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin-top: 1rem;
+    color: var(--site-dark);
 }
 
-.btn-like {
-    color: #E84610;
-    border: none;
-    background: transparent;
+/* Blog */
+
+.blog-title {
+    font-family: "Josefin Sans", sans-serif;
+    color: var(--site-grey);
+    font-size: 1.25rem;
+    letter-spacing: 2px;
 }
 
-.btn-like:hover,
-.btn-like:active {
-    color: #E84610;
-    background: transparent;
+.card-entry {
+    font-family: "Permanent Marker", sans-serif;
+    background-color: var(--site-dark);
+    color: var(--site-white);
+    width: 500px;
+    padding: 1em 2em;
+}
+
+/* buttons */
+
+.blog-links {
+    background-color: var(--site-dark);
+    color: var(--site-orange);
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
     border: none;
+    padding: 4px 8px;
+    margin: 1.5em 2em;
 }

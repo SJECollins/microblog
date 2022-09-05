@@ -15,7 +15,7 @@
                         <hr>
                         <p><strong>{{ post.title }}</strong>: {{ post.content }}</p>
                         <hr>
-                        <span>Posted by: username on {{ post.created_on }}</span>
+                        <span>Posted by: {{ post.author }} on {{ post.created_on }}</span>
                         <hr>
                     </div>
                 {% endfor %}
