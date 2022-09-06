@@ -5,3 +5,5 @@ Micro project to practice Django, AllAuth, PostgreSQL, some Cloudinary thrown in
 
 
 **AIM**: User authentification, tying usernames to posts
+
+Deployed to [TempMicroBlog](https://tempmicroblog.herokuapp.com/)
